@@ -1,0 +1,106 @@
+:root{
+    --vermelho: #d62828;
+    --laranja: #ffbb57;
+    --azul: #036b79;
+    --preto: #060405;
+    --branco: #fff;
+    --cinza: #191919;
+}
+
+.main{
+    background-color: var(--cinza);
+    padding: 3rem;
+
+    .info{
+        text-align: center;
+        margin: 8rem 0;
+
+        .textInfo{
+            font-weight: 400;
+        }
+    }
+
+    .tipo{
+        padding: 10rem;
+        flex-direction: column;
+        gap: 15rem;
+
+        .tiposArara{
+            color: var(--branco);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 5rem;
+
+            .mainImg{
+                max-height: 350px;
+                min-width: 550px;
+            }
+
+            .textoArara{
+
+                .nomeArara{
+                    color: var(--laranja);
+                }
+    
+                .btn{
+                    background-color: var(--vermelho);
+                    color: var(--branco);
+                    padding: .5rem;
+                    margin-top: 1rem;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &:hover{
+                        background-color: var(--azul);
+                        transform: translateY(-5px) scale(1.05);
+                        transition: .2s;
+                    }
+
+                    &:active{
+                        transform: scale(0.95);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .main{
+        background-color: var(--cinza);
+        padding: 1rem;
+        
+        .info{
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .tipo{
+            padding: 5rem;
+            flex-direction: column;
+            gap: 10rem;
+        }
+    }
+}
+
+@media (min-width: 1251px) and (max-width: 1400px){
+    .main{
+        background-color: var(--cinza);
+        padding: 3rem;
+        
+        .info{
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .tipo{
+            padding: 5rem;
+            flex-direction: column;
+            gap: 10rem;
+        }
+    }
+}

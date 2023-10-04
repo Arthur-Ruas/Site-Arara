@@ -1,0 +1,19 @@
+:root{
+    --vermelho: #d62828;
+    --laranja: #ffbb57;
+    --azul: #036b79;
+    --preto: #060405;
+    --branco: #fff;
+    --cinza: #191919;
+}
+
+.home{
+    background: url('../../Assets/araraIMG.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    padding: 5rem;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+
+}

@@ -1,0 +1,88 @@
+:root {
+  --vermelho: #d62828;
+  --laranja: #ffbb57;
+  --azul: #036b79;
+  --preto: #060405;
+  --branco: #fff;
+  --cinza: #191919;
+}
+
+.main {
+  background-color: var(--cinza);
+  padding: 3rem;
+}
+.main .info {
+  text-align: center;
+  margin: 8rem 0;
+}
+.main .info .textInfo {
+  font-weight: 400;
+}
+.main .tipo {
+  padding: 10rem;
+  flex-direction: column;
+  gap: 15rem;
+}
+.main .tipo .tiposArara {
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+}
+.main .tipo .tiposArara .mainImg {
+  max-height: 350px;
+  min-width: 550px;
+}
+.main .tipo .tiposArara .textoArara .nomeArara {
+  color: var(--laranja);
+}
+.main .tipo .tiposArara .textoArara .btn {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main .tipo .tiposArara .textoArara .btn:hover {
+  background-color: var(--azul);
+  transform: translateY(-5px) scale(1.05);
+  transition: 0.2s;
+}
+.main .tipo .tiposArara .textoArara .btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1250px) {
+  .main {
+    background-color: var(--cinza);
+    padding: 1rem;
+  }
+  .main .info {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .main .tipo {
+    padding: 5rem;
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
+@media (min-width: 1251px) and (max-width: 1400px) {
+  .main {
+    background-color: var(--cinza);
+    padding: 3rem;
+  }
+  .main .info {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .main .tipo {
+    padding: 5rem;
+    flex-direction: column;
+    gap: 10rem;
+  }
+}/*# sourceMappingURL=main.css.map */

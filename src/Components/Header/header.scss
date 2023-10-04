@@ -1,0 +1,40 @@
+:root{
+    --vermelho: #d62828;
+    --laranja: #ffbb57;
+    --azul: #036b79;
+    --preto: #060405;
+    --branco: #fff;
+    --cinza: #191919;
+}
+
+.header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: .5rem 2.5rem;
+    justify-content: space-between;
+
+    .arara{
+        font-family: 'Allura', cursive;
+        font-size: 3rem;
+        color: var(--branco);
+    }
+
+    .navDiv{
+        color: var(--branco);
+
+        .nav{
+            gap: 3rem;
+
+            .navItems{
+                font-weight: 500;
+                font-size: .9rem;
+                cursor: pointer;
+
+                &:hover{
+                    color: var(--laranja);
+                }
+            }
+        }
+    }
+}

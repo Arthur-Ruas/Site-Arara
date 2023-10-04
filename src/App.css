@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+  --vermelho: #d62828;
+  --laranja: #ffbb57;
+  --azul: #036b79;
+  --preto: #060405;
+  --branco: #fff;
+  --cinza: #191919;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoMedio{
+  font-size: 1.5rem;
+  color: var(--branco);
+}
+
+.textoGrande{
+  font-size: 8rem;
+  color: var(--branco);
+}
+
+@media (max-width: 1250px){
+  .textoGrande{
+    font-size: 6rem;
+    color: var(--branco);
+  }
+}
+
+@media (min-width: 1251px) and (max-width: 1400px){
+  .textoGrande{
+    font-size: 7rem;
+    color: var(--branco);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--cinza);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--laranja);
+  border-radius: 10px;
+}
